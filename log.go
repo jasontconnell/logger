@@ -57,6 +57,6 @@ func Get(name string) Log {
 	return l
 }
 
-func (l Log) Println(s ...string){
+func (l Log) Println(s ...interface{}){
 	l.il.Println(s)
 }
